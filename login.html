@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录验证</title>
+		<link type="text/css" rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/code.js"></script>
+	</head>
+	<body>
+		<div id="divID">
+			<header>
+				<h1 class="">用户登录</h1>
+				<div class="left-head">
+					<a id="goBack" href="javascript:history.go(-1)" class="left-btn tc_back head-btn">
+						<span class="inset_shadow">
+							<span class="head-return"></span>
+						</span>
+					</a>
+				</div>
+				<div class="right-head">
+					<a href="javascript:void(0)" class="right-btn head-btn">
+						<span class="inset_shadow menuClick">
+							<span class="head-home"></span>
+						</span>
+					</a>
+				</div>
+			</header>
+			<div style="background-color:transparent;">
+				<form id="login" method="post">
+					<ul class="reg-box">
+						<li>
+							<label for="userName">账号：</label>
+							<input type="text" id="userName" name="userName" value="" class="account" maxlength="11" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)" />
+							<span class="error error5"></span>
+						</li>
+						<li>
+							<label for="password">密码：</label>
+							<input type="password" id="password" name="userPassWord" class="admin_pwd" value="" style="color:#999;" onBlur="textBlur(this)" onFocus="textFocus(this)" />
+							<span class="error error6"></span>
+						</li>
+						<li>
+							<label for="key">验证码：</label>
+							<input type="text" class="sradd photokey" id="key" value="" style="color:#000000;ime-mode:disabled;-webkit-ime-mode:inactive;" onBlur="textBlur(this)" onFocus=" textFocus(this) " />
+							<span class="add phoKey"></span>
+							<span class="error error7"></span>
+							<button type="button" class="other" onclick="create_code()">看不清换一张</button>
+						</li>
+					</ul>
+					<div class="sub">
+						<input type="submit" value="登录" />
+					</div>
+				</form>
+			</div>
+			<footer>
+			    <div class="footer_link">
+				    <a class="link_1" href="#" style="color: #FFFFFF;text-decoration: none;">登录</a>&nbsp;|
+				    <a class="link_1" href="#" style="color: #FFFFFF;text-decoration: none;">注册</a>&nbsp;|
+				    <a class="link_3" href="#" style="color: #FFFFFF;text-decoration: none;">回到首页</a>
+			    </div>
+			    <div class="footer_link c_right">&copy;2018 泪痕有限公司</div>
+		    </footer>
+		</div>
+	</body>
+</html>

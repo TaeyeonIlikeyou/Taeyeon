@@ -1,0 +1,256 @@
+*{
+	width: 100%;
+	margin: 0 auto;
+}
+
+body {
+	background: #FFFFFF;
+}
+
+#divID {
+	position: fixed;
+	font-family: "微软雅黑";
+	/*禁止复制粘贴*/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	color: #000;
+}
+
+header {
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+header h1 {
+	width: 190px;
+	display: block;
+	margin: 0 auto;
+	font-family: "microsoft yahei";
+	font-size: 18px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 700;
+}
+
+.left-head{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 40px;
+}
+
+.inset_shadow {
+	display: block;
+	overflow: hidden;
+}
+
+.head-btn {
+	height: 28px;
+	line-height: 28px;
+	display: block;
+	margin-top: 8px;
+}
+
+.head-return {
+	width: 11px;
+	height: 17px;
+	margin: 5px 15px 0;
+	overflow: hidden;
+	display: inline-block;
+	background: url(../img/icon_back.png) no-repeat;
+	background-size: 20px 25px;
+	float: left;
+}
+
+.right-head {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 40px;
+	padding-right: 5px;
+}
+
+.head-home {
+	width: 21px;
+	height: 20px;
+	margin: 4px 10px 0;
+	overflow: hidden;
+	display: inline-block;
+	float: right;
+	background: url(../img/header-nav.png) no-repeat scroll -4px 2px transparent;
+	background-size: 20px 15px;
+}
+
+form {
+	padding: 20px 0px;
+}
+
+ul li {
+	list-style: none;
+}
+
+.sub {
+	text-align: center;
+}
+
+.sub input {
+	display: inline-block;
+	width: 90%;
+	background-color: #FF0000;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-family: "微软雅黑";
+	outline: none;/*样式不能是 none，否则轮廓不会出现*/
+	border: none;
+	margin: auto;
+	border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+.reg-box li {
+	line-height: 44px;/*设置以百分比计的行高：*/
+	overflow: hidden;
+}
+
+.reg-box li label {
+	width: 6%;
+	height: 30px;
+	float: left;
+	line-height: 50px;
+	text-align: right;
+}
+
+.reg-box li input {
+	border-radius: 3px;
+	padding: 6px 0;
+	font-size: 16px;
+	width: 84%;
+	height: 30px;
+	line-height: 28px;
+	border: 1px solid #dddddd;
+	text-indent: 0.5em;
+	float: left;
+}
+
+
+/*验证码*/
+.add {
+	width: 128px;
+	height: 44px;
+	float: left;
+	_display: inline;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.reg-box li .sradd {
+	width: 148px;
+	text-indent: 4px;
+	font-size: 14px;
+}
+
+.reg-box li .input-code {
+	width: 106px;
+	padding: 10px;
+	font-family: Arial;
+	font-style: italic;
+	color: red;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-align: center;
+	text-indent: 0;
+}
+
+.yzm,.phoKey {
+	background: #DDDDDD;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.phoKey {
+	letter-spacing: 3px;
+	font-size: 18px;
+}
+
+.yzmc {
+	background: #dddddd;
+	text-align: center;
+	line-height: 44px;
+	color: #999;
+}
+
+.error {
+	clear: both;
+	display: block;
+	color: red;
+	padding-left: 90px;
+	padding-bottom: 5px;
+	height: 20px;
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+input {
+	background-color: #fff;
+	outline: none;
+}
+
+.reg-box li {
+	width: auto;
+}
+
+.reg-box li input.errorC,.errorC {
+	border: 1px solid blue;
+}
+
+.reg-box li input.checkedN,.checkedN {
+	border: 1px solid #1ece6d;
+}
+
+.reg-box li button.other{
+	width: 120px;
+	height: 30px;
+	color: #000000;
+	background-color: #DDDDDD;
+	border: none;
+	margin-left: 20px;
+	font-family: "微软雅黑";
+}
+
+button[type="button"]:hover {
+	cursor: pointer;
+}
+
+footer {
+	background-color: #000000;
+	padding: 7px 0;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+footer.footer_link {
+	font-size: 147px;
+	line-height: 2em;
+	padding-bottom: 5px;
+}
+
+footer.footer_link .c_right {
+	color: #DDDDDD;
+	line-height: 11px;
+	margin: 0;
+	font-size: 12px;
+}
